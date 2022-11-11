@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/SQR_Logo.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>SQR, inc.</title>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+
+			<img src = "images/SQR_logo.png" alt = "Logo">
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a class = "home" href = "#home" >Home</a></li>
+                <li><a class = "who" href = "#whoweare" >Who We Are</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main class = "container" id = "main">
+		<div class = "main">
+			<h1> SQR, inc. </h1>
+			<p>Our goal is to create a tangible six-pack of square cans which would include our specific branding on the box as well.
+				Along with the distinct square shape of the product, we also plan to differentiate ourselves from traditional cans by implementing a resealable pop tab. </p>
+		</div>
+		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		<div class = "about">
+			<h1> Who Are We? </h1>
+			<p> Have you ever questioned why canned drinks are always in a cylindrical format? So
+			have we. Founded by five students at the University of Michigan, SQR Inc. aims to 
+			alleviate the monotony of drinking out of a cylindrical can. Beer and seltzer drinkers
+			alike can now spice up their nights by picking up a pack of SQR. With SQR's quadrilateral footprint (that still fits in traditional cup holders!), expect to be approached by endless individuals curious about the future of canned beverages. Through our modernized design process, SQR Inc. aims to always remain up-to-date on the latest drink consumption trends and technology. </p>
+			<img src = "images/TheTeam.png" alt = "Logo">
+		</div>
+
+		<div class = "unique">
+			<h1>How We Are Changing the Beverage Industry</h1>
+
+			<model-viewer src="stl/3d.stl" alt="3D Square Can" auto-rotate"></model-viewer>
+		</div>
+	</main>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>SQR &copy; 2022</p>
+	</footer>
+</body>
+</html>
