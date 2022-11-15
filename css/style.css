@@ -50,8 +50,8 @@ nav a{
 }
 
 nav > img {
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
 }
 
 .main {
@@ -104,6 +104,8 @@ h1 {
 
 .about img {
     grid-column: 1/-1;
+    width: 100%;
+    height: auto;
 }
 
 .unique {
@@ -121,5 +123,22 @@ h1 {
 
 footer p{
     display: grid;
+    color: aliceblue;
+}
+
+.unique p {
+    font-size: 25px;
+    color: aliceblue;
+    grid-column: 1/4;
+    margin: auto;
+    text-align: left;
+    line-height: 1;
+}
+
+#stl_cont {
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 4/-1;
 }
 

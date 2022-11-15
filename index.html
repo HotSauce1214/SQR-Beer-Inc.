@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 	<title>SQR, inc.</title>
 </head>
 
@@ -27,34 +30,51 @@
 			<img src = "images/SQR_logo.png" alt = "Logo">
 			<ul>
 				<!-- Since I am on the index file I added class = action to the link to index. -->
-				<li><a class = "home" href = "#home" >Home</a></li>
-                <li><a class = "who" href = "#whoweare" >Who We Are</a></li>
+				<li><a href = "#home" >Home</a></li>
+                <li><a href = "#whoweare" >About Us</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main class = "container" id = "main">
+	<main class = "container" id = "home">
 		<div class = "main">
 			<h1> SQR, inc. </h1>
 			<p>Our goal is to create a tangible six-pack of square cans which would include our specific branding on the box as well.
 				Along with the distinct square shape of the product, we also plan to differentiate ourselves from traditional cans by implementing a resealable pop tab. </p>
 		</div>
 		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
-		<div class = "about">
+		<div class = "about" id = "whoweare">
 			<h1> Who Are We? </h1>
 			<p> Have you ever questioned why canned drinks are always in a cylindrical format? So
 			have we. Founded by five students at the University of Michigan, SQR Inc. aims to 
 			alleviate the monotony of drinking out of a cylindrical can. Beer and seltzer drinkers
 			alike can now spice up their nights by picking up a pack of SQR. With SQR's quadrilateral footprint (that still fits in traditional cup holders!), expect to be approached by endless individuals curious about the future of canned beverages. Through our modernized design process, SQR Inc. aims to always remain up-to-date on the latest drink consumption trends and technology. </p>
-			<img src = "images/TheTeam.png" alt = "Logo">
+			<img src = "images/TheTeam2.jpeg" alt = "Logo">
 		</div>
 
 		<div class = "unique">
 			<h1>How We Are Changing the Beverage Industry</h1>
+			<p> SQR’s quadrilateral shape goes beyond just attracting the attention of everyone in the room; the can’s distinct design saves substantially more space than the traditional 12 ounce beer can. With the same amount of volume as a typical can, SQR allows for 21.5% more drinks to be carried in the same amount of space. That means transporting drinks to tailgates, camping trips, and parties alike has been made far more efficient. Never again worry about having to make multiple trips to the grocery store since your car has limited space. Moreover, the four sided can allows for a more ergonomic grip when holding it from differing angles, and it offers far more stability than its cylindrical counterpart. Drinkers need not worry about SQR beers pouring out of a case when opening it up for the first time due to its innate stability and stackability. </p>
+		
+		<div id="stl_cont" style="width:500px;height:500px;margin:0 auto;"></div>
 
-			<model-viewer src="stl/3d.stl" alt="3D Square Can" auto-rotate"></model-viewer>
+			<script src="stl_viewer/stl_viewer.min.js"></script>
+			
+			<script>
+				var stl_viewer=new StlViewer
+				(
+					document.getElementById("stl_cont"),
+					{
+						models:
+						[
+							{filename:"3d.stl"}
+						]
+					}
+				);
+			</script>
+			<!-- <model-viewer src="stl/3d.stl" alt="3D Square Can" auto-rotate"></model-viewer> -->
 		</div>
 	</main>
 
