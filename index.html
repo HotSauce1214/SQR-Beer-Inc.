@@ -22,6 +22,9 @@
 
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
+	<div class="skip">
+		<a href="#main">Skip to Main Content</a>
+	</div>
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
@@ -32,7 +35,7 @@
 				<!-- Since I am on the index file I added class = action to the link to index. -->
 				<li><a href = "#home" >Home</a></li>
                 <li><a href = "#whoweare" >About Us</a></li>
-				<li><a href = "#unique" ></a>Why SQR?</li>
+				<li><a href = "#why.html" >Why SQR?</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
@@ -55,28 +58,10 @@
 			<img src = "images/TheTeam2.jpeg" alt = "Logo">
 		</div>
 
-		<div class = "unique">
-			<h1>How We Are Changing the Beverage Industry</h1>
-			<p> SQR’s quadrilateral shape goes beyond just attracting the attention of everyone in the room; the can’s distinct design saves substantially more space than the traditional 12 ounce beer can. With the same amount of volume as a typical can, SQR allows for 21.5% more drinks to be carried in the same amount of space. That means transporting drinks to tailgates, camping trips, and parties alike has been made far more efficient. Never again worry about having to make multiple trips to the grocery store since your car has limited space. Moreover, the four sided can allows for a more ergonomic grip when holding it from differing angles, and it offers far more stability than its cylindrical counterpart. Drinkers need not worry about SQR beers pouring out of a case when opening it up for the first time due to its innate stability and stackability. </p>
-		
-		<div id="stl_cont" style="width:500px;height:500px;margin:0 auto;"></div>
+		<img src = "images/spacegraphicclose.jpeg" width = 25 alt = "Space Graphic">
+		<img src = "images/355mlrender.jpeg" width = 25 alt = "355ml">
 
-			<script src="stl_viewer/stl_viewer.min.js"></script>
-			
-			<script>
-				var stl_viewer=new StlViewer
-				(
-					document.getElementById("stl_cont"),
-					{
-						models:
-						[
-							{filename:"3d.stl"}
-						]
-					}
-				);
-			</script>
-			<!-- <model-viewer src="stl/3d.stl" alt="3D Square Can" auto-rotate"></model-viewer> -->
-		</div>
+
 	</main>
 
 	<!-- Footer is a sematic tag page that aids readability -->

@@ -1,3 +1,27 @@
+@font-face {
+    font-family: Balboa;
+    src: url(font/BalboaLight.ttf);
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+  div.skip a{
+    position: relative;
+    top: -40px;
+}
+
+div.skip a:focus {
+    position: relative;
+    top: 20px;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -8,7 +32,7 @@ html{
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Balboa;
     background-color: #737373;
     font-size: 18px;
     line-height: 1.15;
@@ -31,6 +55,7 @@ nav li {
     padding-left: 20px;
     text-align: right;
     margin: right;
+    font-weight: bold;
 }
 
 nav li:hover {
@@ -65,13 +90,15 @@ nav > img {
 }
 
 .main p {
-    font-size: 30px;
+    font-size: 50px;
     padding: 0 100px;
     text-align: center;
     color: aliceblue;
+    font-weight: bold;
 }
 
 h1 {
+    font-family: Balboa;
     font-size: 100px;
     line-height: 1;
     padding: 50px 0;
@@ -88,7 +115,7 @@ h1 {
 }
 .about h1 {
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     grid-column: 1/-1;
     font-weight: bold;
 }
@@ -116,18 +143,19 @@ h1 {
 
 }
 .unique h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     grid-column: 1/-1;
     font-size: 50px;
 }
 
 footer p{
+    font-size: 20px;
     display: grid;
     color: aliceblue;
 }
 
 .unique p {
-    font-size: 25px;
+    font-size: 30px;
     color: aliceblue;
     grid-column: 1/4;
     margin: auto;
