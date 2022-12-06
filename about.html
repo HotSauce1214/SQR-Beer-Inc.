@@ -13,6 +13,8 @@
 	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
 	<!-- Link to the stylesheet -->
+	<!-- <link rel="stylesheet" href="style/about.css"> -->
+
 	<link rel="stylesheet" href="css/style.css">
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -23,7 +25,7 @@
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
 	<div class="skip">
-		<a href="#homepage">Skip to Main Content</a>
+		<a href="#whoweare">Skip to Main Content</a>
 	</div>
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
@@ -33,8 +35,8 @@
 			<img src = "images/SQR_logo.png" alt = "Logo">
 			<ul>
 				<!-- Since I am on the index file I added class = action to the link to index. -->
-				<li><a class = 'active' href = "#home" >Home</a></li>
-                <li><a href = "about.html" >About Us</a></li>
+				<li><a href = "index.html" >Home</a></li>
+                <li><a class = 'active' href = "#about" >About Us</a></li>
 				<li><a href = "why.html" >Why SQR?</a></li>
 			</ul>
 		</nav>
@@ -42,26 +44,30 @@
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main class = "container" id = "home">
-		<div class = "main" id = "homepage">
-			<h1> SQR, inc. </h1>
-			<p>Our goal is to create a tangible six-pack of square cans which would include our specific branding on the box as well.
-				Along with the distinct square shape of the product, we also plan to differentiate ourselves from traditional cans by implementing a resealable pop tab. </p>
+	<main class = "about_container" id = "about_home">
+        
+        <div class = "about" id = "whoWeAre">
+			<h1> Who Are We? </h1>
+			<p> Have you ever questioned why canned drinks are always in a cylindrical format? So
+			have we. Founded by five students at the University of Michigan, SQR Inc. aims to 
+			alleviate the monotony of drinking out of a cylindrical can. Beer and seltzer drinkers
+			alike can now spice up their nights by picking up a pack of SQR. With SQR's quadrilateral footprint (that still fits in traditional cup holders!), expect to be approached by endless individuals curious about the future of canned beverages. Through our modernized design process, SQR Inc. aims to always remain up-to-date on the latest drink consumption trends and technology. </p>
+			<img src = "images/TheTeam2.jpeg" alt = "Logo">
 		</div>
-		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
-	
-		<div class = "images">
+		
+		<div class = "warehouse">
 
-			<img src = "images/spacegraphicclose.jpeg" width = 25 alt = "Space Graphic">
-			<img src = "images/SQR Ortho Final.jpeg" width = 25 alt = "Ortho Final">
-			<img src = "images/SQR ortho full 3.jpeg" width = 25 alt = "Ortho 3">
-			<img src = "images/355mlrender.jpeg" width = 25 alt = "355ml">
-			<img src = "images/SQR ortho full.jpeg" width = 25 alt = "Ortho Full">
-			<img src = "images/SQR ortho full 2.jpeg" width = 25 alt = "Ortho 2">
-			<img src = "images/SQR scatter 2.jpeg" width = 25 alt = "Scatter 2">
-			<img src = "images/IMG_2090.JPG" width = 25 alt = "355ml Label">
+			<!-- <img src = "images/.png" alt = "Logo"> -->
+			<img id="image1" src = "images/warehouse.png" alt = "Logo">
+			<img id="image2" src = "images/warehouse2.png" alt = "Logo">
+			<img id="image3" src = "images/warehouse3.png" alt = "Logo">
+			<img id="image4" src = "images/warehouse4.png" alt = "Logo">
+			<img id="image5" src = "images/warehouse5.png" alt = "Logo">
 
 		</div>
+
+
+
 
 	</main>
 
