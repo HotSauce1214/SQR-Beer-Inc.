@@ -169,7 +169,8 @@ footer p{
     padding-top: 25px;
     font-size: 20px;
     display: grid;
-    color: aliceblue;
+    color: white;
+    background-color: #333333;
     /* margin: auto; */
 }
 
